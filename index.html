@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio profesional - Desarrollador Web">
+    <title>Mi Portafolio | Desarrollador Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Iconos de Font Awesome para redes sociales y habilidades -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Barra de navegación fija -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#inicio">Mi Portafolio</a>
+            </div>
+            <!-- Menú de navegación -->
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <!-- Botón hamburguesa para móviles -->
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de inicio / Hero -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">¡Hola! Soy <span class="highlight">Tu Nombre</span></h1>
+            <p class="hero-subtitle">Desarrollador Web Full Stack</p>
+            <p class="hero-description">
+                Transformo ideas en experiencias digitales únicas y funcionales
+            </p>
+            <div class="hero-buttons">
+                <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
+                <a href="#contacto" class="btn btn-secondary">Contáctame</a>
+            </div>
+        </div>
+        <!-- Flecha para hacer scroll hacia abajo -->
+        <div class="scroll-down">
+            <a href="#sobre-mi">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi" class="section">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <!-- Placeholder para foto de perfil -->
+                    <div class="profile-image">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>
+                        Soy un desarrollador web apasionado por crear soluciones digitales innovadoras. 
+                        Con experiencia en el desarrollo de aplicaciones web modernas, me especializo en 
+                        transformar ideas complejas en interfaces intuitivas y funcionales.
+                    </p>
+                    <p>
+                        Mi enfoque se centra en escribir código limpio, escalable y mantenible, siempre 
+                        buscando las mejores prácticas y las últimas tecnologías del mercado. Me encanta 
+                        aprender constantemente y enfrentar nuevos desafíos que me permitan crecer profesionalmente.
+                    </p>
+                    <p>
+                        Cuando no estoy programando, disfruto contribuir a proyectos de código abierto, 
+                        leer sobre nuevas tendencias tecnológicas y compartir conocimientos con la comunidad.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Años de Experiencia</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">25+</span>
+                            <span class="stat-label">Proyectos Completados</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Clientes Satisfechos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section id="habilidades" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Habilidades</h2>
+            <p class="section-subtitle">Tecnologías y herramientas que domino</p>
+            
+            <div class="skills-grid">
+                <!-- Habilidad 1: HTML/CSS -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML/CSS</h3>
+                    <p>Diseño web semántico y responsive con HTML5 y CSS3 moderno</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+
+                <!-- Habilidad 2: JavaScript -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>Desarrollo con JavaScript moderno (ES6+) y frameworks populares</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+
+                <!-- Habilidad 3: React -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React</h3>
+                    <p>Creación de interfaces interactivas con React y sus ecosistemas</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+
+                <!-- Habilidad 4: Node.js -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-node"></i>
+                    </div>
+                    <h3>Node.js</h3>
+                    <p>Desarrollo backend escalable con Node.js y Express</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                </div>
+
+                <!-- Habilidad 5: Git -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3>Git & GitHub</h3>
+                    <p>Control de versiones y colaboración en proyectos</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+
+                <!-- Habilidad 6: Diseño Responsive -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Diseño Responsive</h3>
+                    <p>Desarrollo de sitios web adaptables a todos los dispositivos</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos" class="section">
+        <div class="container">
+            <h2 class="section-title">Proyectos</h2>
+            <p class="section-subtitle">Algunos de mis trabajos recientes</p>
+            
+            <div class="projects-grid">
+                <!-- Proyecto 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/4a90e2/ffffff?text=E-Commerce" alt="Proyecto E-Commerce">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Tienda Online</h3>
+                        <p>
+                            Plataforma de e-commerce completa con carrito de compras, 
+                            sistema de pagos y panel de administración.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/50c878/ffffff?text=App+Tareas" alt="Proyecto App de Tareas">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Gestor de Tareas</h3>
+                        <p>
+                            Aplicación web para gestión de proyectos y tareas con 
+                            funcionalidades de colaboración en tiempo real.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">CSS3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/ff6b6b/ffffff?text=Portfolio" alt="Proyecto Portfolio">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Portfolio Creativo</h3>
+                        <p>
+                            Sitio web portfolio con animaciones modernas y diseño 
+                            minimalista para un artista digital.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/9b59b6/ffffff?text=API+REST" alt="Proyecto API REST">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>API REST</h3>
+                        <p>
+                            API RESTful robusta para gestión de usuarios y autenticación 
+                            con JWT y validación de datos.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Express</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">JWT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 5 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/f39c12/ffffff?text=Dashboard" alt="Proyecto Dashboard">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Dashboard Analítico</h3>
+                        <p>
+                            Panel de control interactivo con gráficos y visualización 
+                            de datos en tiempo real.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Chart.js</span>
+                            <span class="tag">API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 6 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/1abc9c/ffffff?text=Blog" alt="Proyecto Blog">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Blog Personal</h3>
+                        <p>
+                            Plataforma de blog con sistema de comentarios, 
+                            categorías y optimización SEO.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">Markdown</span>
+                            <span class="tag">SEO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <p class="section-subtitle">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+            
+            <div class="contact-content">
+                <!-- Información de contacto -->
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <p>
+                        Estoy siempre abierto a discutir nuevos proyectos, ideas creativas 
+                        o oportunidades para formar parte de tu visión.
+                    </p>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:tu.email@ejemplo.com">tu.email@ejemplo.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Teléfono</h4>
+                                <a href="tel:+1234567890">+34 123 456 789</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Ubicación</h4>
+                                <p>Madrid, España</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Redes sociales -->
+                    <div class="social-links">
+                        <a href="https://github.com" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Formulario de contacto -->
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input 
+                            type="text" 
+                            id="nombre" 
+                            name="nombre" 
+                            placeholder="Tu Nombre" 
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="Tu Email" 
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <input 
+                            type="text" 
+                            id="asunto" 
+                            name="asunto" 
+                            placeholder="Asunto" 
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <textarea 
+                            id="mensaje" 
+                            name="mensaje" 
+                            rows="5" 
+                            placeholder="Tu Mensaje" 
+                            required
+                        ></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        Enviar Mensaje
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Mi Portafolio. Todos los derechos reservados.</p>
+            <p>Diseñado y desarrollado con <i class="fas fa-heart"></i> por Tu Nombre</p>
+        </div>
+    </footer>
+
+    <!-- Botón para volver arriba -->
+    <button id="scroll-top" class="scroll-top" aria-label="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
